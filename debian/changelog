@@ -1,8 +1,9 @@
-bcmwl (6.20.155.1+bdcom-0ubuntu3) UNRELEASED; urgency=low
+bcmwl (6.20.155.1+bdcom-0ubuntu3) raring; urgency=low
 
-  * 
+  * 0006-add-support-for-linux-3.8.0.patch:
+    - Add support for Linux 3.8 (LP: #1095751).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Tue, 08 Jan 2013 15:11:01 +0100
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 08 Jan 2013 15:13:17 +0100
 
 bcmwl (6.20.155.1+bdcom-0ubuntu2) raring; urgency=low
 
