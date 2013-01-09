@@ -1,3 +1,9 @@
+bcmwl (6.20.155.1+bdcom-0ubuntu4) UNRELEASED; urgency=low
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 09 Jan 2013 15:20:47 +0100
+
 bcmwl (6.20.155.1+bdcom-0ubuntu3) raring; urgency=low
 
   * 0006-add-support-for-linux-3.8.0.patch:
