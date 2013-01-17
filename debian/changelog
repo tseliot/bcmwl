@@ -1,3 +1,9 @@
+bcmwl (6.20.155.1+bdcom-0ubuntu6) UNRELEASED; urgency=low
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 17 Jan 2013 16:30:45 +0100
+
 bcmwl (6.20.155.1+bdcom-0ubuntu5) raring; urgency=low
 
   * 0007-nl80211-move-scan-API-to-wdev.patch:
