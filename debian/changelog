@@ -1,8 +1,8 @@
-bcmwl (6.20.155.1+bdcom-0ubuntu7) UNRELEASED; urgency=low
+bcmwl (6.30.223.30+bdcom-0ubuntu1) UNRELEASED; urgency=low
 
   * 
 
- -- Alberto Milone <alberto.milone@canonical.com>  Sat, 09 Mar 2013 11:15:10 +0100
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 25 Mar 2013 13:40:23 +0100
 
 bcmwl (6.20.155.1+bdcom-0ubuntu6) raring; urgency=low
 
