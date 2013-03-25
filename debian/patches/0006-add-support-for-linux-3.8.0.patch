@@ -1,19 +1,19 @@
-From 3ff07cdaaa001860ab15a298605f3e30a2869e13 Mon Sep 17 00:00:00 2001
+From 165f72491ffe0ffdf21c45ec7d5d29e16e2b6256 Mon Sep 17 00:00:00 2001
 From: Alberto Milone <alberto.milone@canonical.com>
 Date: Mon, 25 Mar 2013 14:08:51 +0100
 Subject: [PATCH 1/1] Add support for Linux 3.8
 
 ---
- src/include/bcmutils.h          |    4 +++
+ src/include/bcmutils.h          |    5 +++-
  src/wl/sys/wl_cfg80211_hybrid.c |   61 +++++++++++++++++++++++++++++++++++++--
  src/wl/sys/wl_linux.c           |    4 +++
- 3 files changed, 67 insertions(+), 2 deletions(-)
+ 3 files changed, 67 insertions(+), 3 deletions(-)
 
 diff --git a/src/include/bcmutils.h b/src/include/bcmutils.h
-index 494de15..6cec04d 100644
+index 494de15..8843d8b 100644
 --- a/src/include/bcmutils.h
 +++ b/src/include/bcmutils.h
-@@ -611,7 +611,11 @@ extern void printbig(char *buf);
+@@ -611,11 +611,14 @@ extern void printbig(char *buf);
  extern void prhex(const char *msg, uchar *buf, uint len);
  
  extern bcm_tlv_t *BCMROMFN(bcm_next_tlv)(bcm_tlv_t *elt, int *buflen);
@@ -25,6 +25,10 @@ index 494de15..6cec04d 100644
  extern bcm_tlv_t *BCMROMFN(bcm_parse_ordered_tlvs)(void *buf, int buflen, uint key);
  
  extern const char *bcmerrorstr(int bcmerror);
+-extern bcm_tlv_t *BCMROMFN(bcm_parse_tlvs)(void *buf, int buflen, uint key);
+ 
+ typedef uint32 mbool;
+ #define mboolset(mb, bit)		((mb) |= (bit))		
 diff --git a/src/wl/sys/wl_cfg80211_hybrid.c b/src/wl/sys/wl_cfg80211_hybrid.c
 index 7ab4d34..ffa1ceb 100644
 --- a/src/wl/sys/wl_cfg80211_hybrid.c
