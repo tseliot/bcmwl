@@ -1,3 +1,9 @@
+bcmwl (6.30.223.30+bdcom-0ubuntu2) UNRELEASED; urgency=low
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 18 Jun 2013 17:32:37 +0200
+
 bcmwl (6.30.223.30+bdcom-0ubuntu1) saucy; urgency=low
 
   * New upstream release.
