@@ -1,3 +1,60 @@
+bcmwl (6.30.223.248+bdcom-0ubuntu7) wily; urgency=medium
+
+  * debian/bcmwl-kernel-source.modaliases: really fix matching for model 43b1,
+    apparently modaliases are case-sensitive, and changing ubuntu-drivers
+    to remove that limitation looks like it would negatively affect its
+    performance. (LP: #1498074)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Mon, 28 Sep 2015 15:46:13 -0400
+
+bcmwl (6.30.223.248+bdcom-0ubuntu6) wily; urgency=medium
+
+  * debian/bcmwl-kernel-source.modaliases: add 43b1 as a matched model in
+    modalises; https://wireless.wiki.kernel.org/en/users/Drivers/b43 says it
+    is supported by the wl driver (this is BCM4352). (LP: #1498074, #1173761)
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Tue, 22 Sep 2015 09:52:45 -0400
+
+bcmwl (6.30.223.248+bdcom-0ubuntu5) wily; urgency=medium
+
+  * debian/bcmwl-kernel-source.modaliases: Fine-tune product list as per
+    http://www.broadcom.com/docs/linux_sta/README_6.30.223.248.txt. Thanks
+    Adam Smith! (LP: #1490713)
+  * debian/bcmwl-kernel-source.postrm: Warn that a reboot is needed after
+    removing. Thanks Adam Smith! (LP: #1491070)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 18 Sep 2015 10:12:45 +0200
+
+bcmwl (6.30.223.248+bdcom-0ubuntu4.1) wily; urgency=medium
+
+  * Added needed patches for lts kernels (LP: #1415880)
+  * Fixed null pointer reference (LP: #1415880)
+    d/p/0019-broadcom-sta-6.30.223.248-3.18-null-pointer-fix.patch
+
+ -- Rafael David Tinoco <rafael.tinoco@canonical.com>  Thu, 10 Sep 2015 10:42:38 -0500
+
+bcmwl (6.30.223.248+bdcom-0ubuntu4) wily; urgency=medium
+
+  * Add support for Linux 4.2
+    debian/patches/0018-cfg80211_disconnected.patch 
+    A successful 4.2 based install depends on EXPORT_SYMBOL(flush_workqueue)
+    which will first appear in linux (4.2.0-3.3).
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 04 Aug 2015 11:32:12 -0600
+
+bcmwl (6.30.223.248+bdcom-0ubuntu3) wily; urgency=medium
+
+  [ Simon Eisenmann ]
+  * debian/dkms.conf.in
+    debian/patches/0016-repair-make-warnings.patch
+    debian/patches/0017-add-support-for-Linux-4.0.patch
+    - Fixed make warnings
+      Credit for the patch goes to Krzysztof Kolasa.
+    - Add support for Linux 4.0 (LP: #1424676)
+      Credit for the patch goes to Krzysztof Kolasa.
+
+ -- Mario Limonciello <Mario_Limonciello@Dell.com>  Mon, 11 May 2015 18:22:09 -0500
+
 bcmwl (6.30.223.248+bdcom-0ubuntu2) vivid; urgency=medium
 
   * debian/dkms.conf.in,
