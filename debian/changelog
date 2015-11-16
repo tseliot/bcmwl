@@ -1,3 +1,9 @@
+bcmwl (6.30.223.248+bdcom-0ubuntu8) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 16 Nov 2015 17:20:40 +0100
+
 bcmwl (6.30.223.248+bdcom-0ubuntu7) wily; urgency=medium
 
   * debian/bcmwl-kernel-source.modaliases: really fix matching for model 43b1,
